@@ -2,6 +2,6 @@
 
 int main()
 {
-    std::cout << "Hello, Wodfsfsgdgdafgdfgdrld!" << std::endl;
+    std::cout << "ori" << std::endl;
     return 0;
 }

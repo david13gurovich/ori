@@ -2,6 +2,6 @@
 
 int main()
 {
-    std::cout << "ori" << std::endl;
+    std::cout << "ori!!" << std::endl;
     return 0;
 }

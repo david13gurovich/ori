@@ -1,9 +1,14 @@
-#include <iostream>
+/*
+ * animaly_detection_util.cpp
+ *
+ * Author: 314617739 Ori Angel
+ */
+
 #include <cmath>
 #include "anomaly_detection_util.h"
 
-//return E(x)
-float expectedValue(float *x, int size)
+//return u=E(x)=avg
+float avg(float *x, int size)
 {
     float sum = 0;
     for (int i = 0; i < size; i++)
@@ -25,14 +30,14 @@ float expectedValue2Parms(float *x, float *y, int size)
 // returns the variance of X and Y
 float var(float *x, int size)
 {
-    float x1 = expectedValue(x, size);
+    float x1 = avg(x, size);
     float u = expectedValue2Parms(x, x, size);
     return x1 - u;
 }
 // returns the covariance of X and Y
 float cov(float *x, float *y, int size)
 {
-    return expectedValue2Parms(x, y, size) - (expectedValue(x, size) * expectedValue(y, size));
+    return expectedValue2Parms(x, y, size) - (avg(x, size) * avg(y, size));
 }
 // returns the Pearson correlation coefficient of X and Y
 float pearson(float *x, float *y, int size)
@@ -56,7 +61,7 @@ Line linear_reg(Point **points, int size)
 
     // float cov1=cov()
     float a = cov(xPoints, yPoints, pointsLength) / var(xPoints, pointsLength);
-    float b = expectedValue(yPoints, pointsLength) - a * expectedValue(xPoints, pointsLength);
+    float b = avg(yPoints, pointsLength) - a * avg(xPoints, pointsLength);
     Line *line = new Line(a, b);
     return *line;
 }
@@ -73,10 +78,4 @@ float dev(Point p, Line l)
 {
     float yLine = l.a * p.x + l.b;
     return abs(yLine - p.y);
-}
-
-int main()
-{
-    std::cout << "!" << std::endl;
-    return 0;
 }

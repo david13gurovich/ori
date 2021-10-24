@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/david1998/Documents/HW/tihnut_mitkadem1/ex1/MainTrain.cpp
-iostream
--
-anomaly_detection_util.hpp
-/home/david1998/Documents/HW/tihnut_mitkadem1/ex1/anomaly_detection_util.hpp
-
 /home/david1998/Documents/HW/tihnut_mitkadem1/ex1/anomaly_detection_util.cpp
 anomaly_detection_util.hpp
 /home/david1998/Documents/HW/tihnut_mitkadem1/ex1/anomaly_detection_util.hpp
@@ -20,5 +14,11 @@ math.h
 iostream
 -
 
+/home/david1998/Documents/HW/tihnut_mitkadem1/ex1/anomaly_detection_util.hpp
+
+/home/david1998/Documents/HW/tihnut_mitkadem1/ex1/main.cpp
+iostream
+-
+anomaly_detection_util.hpp
 /home/david1998/Documents/HW/tihnut_mitkadem1/ex1/anomaly_detection_util.hpp
 

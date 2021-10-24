@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = /home/david1998/Documents/HW/tihnut_mitkadem1/ex1/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/EX1.dir/all
+all: CMakeFiles/ex123.dir/all
 
 .PHONY : all
 
@@ -88,10 +88,10 @@ clean: CMakeFiles/NightlyBuild.dir/clean
 clean: CMakeFiles/ExperimentalBuild.dir/clean
 clean: CMakeFiles/ExperimentalUpdate.dir/clean
 clean: CMakeFiles/ContinuousStart.dir/clean
+clean: CMakeFiles/ex123.dir/clean
 clean: CMakeFiles/ContinuousMemCheck.dir/clean
 clean: CMakeFiles/ContinuousTest.dir/clean
 clean: CMakeFiles/ContinuousSubmit.dir/clean
-clean: CMakeFiles/EX1.dir/clean
 
 .PHONY : clean
 
@@ -771,6 +771,33 @@ CMakeFiles/ContinuousStart.dir/clean:
 .PHONY : CMakeFiles/ContinuousStart.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/ex123.dir
+
+# All Build rule for target.
+CMakeFiles/ex123.dir/all:
+	$(MAKE) -f CMakeFiles/ex123.dir/build.make CMakeFiles/ex123.dir/depend
+	$(MAKE) -f CMakeFiles/ex123.dir/build.make CMakeFiles/ex123.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/david1998/Documents/HW/tihnut_mitkadem1/ex1/build/CMakeFiles --progress-num=1,2,3 "Built target ex123"
+.PHONY : CMakeFiles/ex123.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ex123.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/david1998/Documents/HW/tihnut_mitkadem1/ex1/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ex123.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/david1998/Documents/HW/tihnut_mitkadem1/ex1/build/CMakeFiles 0
+.PHONY : CMakeFiles/ex123.dir/rule
+
+# Convenience name for target.
+ex123: CMakeFiles/ex123.dir/rule
+
+.PHONY : ex123
+
+# clean rule for target.
+CMakeFiles/ex123.dir/clean:
+	$(MAKE) -f CMakeFiles/ex123.dir/build.make CMakeFiles/ex123.dir/clean
+.PHONY : CMakeFiles/ex123.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/ContinuousMemCheck.dir
 
 # All Build rule for target.
@@ -850,33 +877,6 @@ ContinuousSubmit: CMakeFiles/ContinuousSubmit.dir/rule
 CMakeFiles/ContinuousSubmit.dir/clean:
 	$(MAKE) -f CMakeFiles/ContinuousSubmit.dir/build.make CMakeFiles/ContinuousSubmit.dir/clean
 .PHONY : CMakeFiles/ContinuousSubmit.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/EX1.dir
-
-# All Build rule for target.
-CMakeFiles/EX1.dir/all:
-	$(MAKE) -f CMakeFiles/EX1.dir/build.make CMakeFiles/EX1.dir/depend
-	$(MAKE) -f CMakeFiles/EX1.dir/build.make CMakeFiles/EX1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/david1998/Documents/HW/tihnut_mitkadem1/ex1/build/CMakeFiles --progress-num=1,2,3 "Built target EX1"
-.PHONY : CMakeFiles/EX1.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/EX1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/david1998/Documents/HW/tihnut_mitkadem1/ex1/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/EX1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/david1998/Documents/HW/tihnut_mitkadem1/ex1/build/CMakeFiles 0
-.PHONY : CMakeFiles/EX1.dir/rule
-
-# Convenience name for target.
-EX1: CMakeFiles/EX1.dir/rule
-
-.PHONY : EX1
-
-# clean rule for target.
-CMakeFiles/EX1.dir/clean:
-	$(MAKE) -f CMakeFiles/EX1.dir/build.make CMakeFiles/EX1.dir/clean
-.PHONY : CMakeFiles/EX1.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

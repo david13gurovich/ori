@@ -1,10 +1,10 @@
 /*
- * animaly_detection_util.cpp
+ * anomaly_detection_util.cpp
  *
  * Author: 318572047 David Gurovich
  */
 
-#include "anomaly_detection_util.h"
+#include "anomaly_detection_util.hpp"
 #include <math.h> 
 #include <iostream>
 
@@ -67,7 +67,6 @@ Line linear_reg(Point** points, int size)
     corolation = pearson(xArray,yArray,size);
     if(corolation == 0)
     {
-        std::cout << "no corolation!";
         Line l = Line();
         return l;
     }

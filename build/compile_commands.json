@@ -1,12 +1,12 @@
 [
 {
   "directory": "/home/david1998/Documents/HW/tihnut_mitkadem1/ex1/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/EX1.dir/MainTrain.cpp.o -c /home/david1998/Documents/HW/tihnut_mitkadem1/ex1/MainTrain.cpp",
-  "file": "/home/david1998/Documents/HW/tihnut_mitkadem1/ex1/MainTrain.cpp"
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/ex123.dir/main.cpp.o -c /home/david1998/Documents/HW/tihnut_mitkadem1/ex1/main.cpp",
+  "file": "/home/david1998/Documents/HW/tihnut_mitkadem1/ex1/main.cpp"
 },
 {
   "directory": "/home/david1998/Documents/HW/tihnut_mitkadem1/ex1/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/EX1.dir/anomaly_detection_util.cpp.o -c /home/david1998/Documents/HW/tihnut_mitkadem1/ex1/anomaly_detection_util.cpp",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/ex123.dir/anomaly_detection_util.cpp.o -c /home/david1998/Documents/HW/tihnut_mitkadem1/ex1/anomaly_detection_util.cpp",
   "file": "/home/david1998/Documents/HW/tihnut_mitkadem1/ex1/anomaly_detection_util.cpp"
 }
 ]

@@ -887,7 +887,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "EX1"
+			"value" : "ex123"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION",
@@ -1790,30 +1790,6 @@
 			"value" : "1500"
 		},
 		{
-			"name" : "EX1_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/david1998/Documents/HW/tihnut_mitkadem1/ex1/build"
-		},
-		{
-			"name" : "EX1_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/david1998/Documents/HW/tihnut_mitkadem1/ex1"
-		},
-		{
 			"name" : "GITCOMMAND",
 			"properties" : 
 			[
@@ -2020,6 +1996,30 @@
 			],
 			"type" : "UNINITIALIZED",
 			"value" : ""
+		},
+		{
+			"name" : "ex123_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/david1998/Documents/HW/tihnut_mitkadem1/ex1/build"
+		},
+		{
+			"name" : "ex123_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/david1998/Documents/HW/tihnut_mitkadem1/ex1"
 		}
 	],
 	"kind" : "cache",

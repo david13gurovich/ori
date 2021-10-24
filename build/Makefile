@@ -469,6 +469,19 @@ ContinuousStart/fast:
 .PHONY : ContinuousStart/fast
 
 #=============================================================================
+# Target rules for targets named ex123
+
+# Build rule for target.
+ex123: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ex123
+.PHONY : ex123
+
+# fast build rule for target.
+ex123/fast:
+	$(MAKE) -f CMakeFiles/ex123.dir/build.make CMakeFiles/ex123.dir/build
+.PHONY : ex123/fast
+
+#=============================================================================
 # Target rules for targets named ContinuousMemCheck
 
 # Build rule for target.
@@ -507,53 +520,13 @@ ContinuousSubmit/fast:
 	$(MAKE) -f CMakeFiles/ContinuousSubmit.dir/build.make CMakeFiles/ContinuousSubmit.dir/build
 .PHONY : ContinuousSubmit/fast
 
-#=============================================================================
-# Target rules for targets named EX1
-
-# Build rule for target.
-EX1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 EX1
-.PHONY : EX1
-
-# fast build rule for target.
-EX1/fast:
-	$(MAKE) -f CMakeFiles/EX1.dir/build.make CMakeFiles/EX1.dir/build
-.PHONY : EX1/fast
-
-MainTrain.o: MainTrain.cpp.o
-
-.PHONY : MainTrain.o
-
-# target to build an object file
-MainTrain.cpp.o:
-	$(MAKE) -f CMakeFiles/EX1.dir/build.make CMakeFiles/EX1.dir/MainTrain.cpp.o
-.PHONY : MainTrain.cpp.o
-
-MainTrain.i: MainTrain.cpp.i
-
-.PHONY : MainTrain.i
-
-# target to preprocess a source file
-MainTrain.cpp.i:
-	$(MAKE) -f CMakeFiles/EX1.dir/build.make CMakeFiles/EX1.dir/MainTrain.cpp.i
-.PHONY : MainTrain.cpp.i
-
-MainTrain.s: MainTrain.cpp.s
-
-.PHONY : MainTrain.s
-
-# target to generate assembly for a file
-MainTrain.cpp.s:
-	$(MAKE) -f CMakeFiles/EX1.dir/build.make CMakeFiles/EX1.dir/MainTrain.cpp.s
-.PHONY : MainTrain.cpp.s
-
 anomaly_detection_util.o: anomaly_detection_util.cpp.o
 
 .PHONY : anomaly_detection_util.o
 
 # target to build an object file
 anomaly_detection_util.cpp.o:
-	$(MAKE) -f CMakeFiles/EX1.dir/build.make CMakeFiles/EX1.dir/anomaly_detection_util.cpp.o
+	$(MAKE) -f CMakeFiles/ex123.dir/build.make CMakeFiles/ex123.dir/anomaly_detection_util.cpp.o
 .PHONY : anomaly_detection_util.cpp.o
 
 anomaly_detection_util.i: anomaly_detection_util.cpp.i
@@ -562,7 +535,7 @@ anomaly_detection_util.i: anomaly_detection_util.cpp.i
 
 # target to preprocess a source file
 anomaly_detection_util.cpp.i:
-	$(MAKE) -f CMakeFiles/EX1.dir/build.make CMakeFiles/EX1.dir/anomaly_detection_util.cpp.i
+	$(MAKE) -f CMakeFiles/ex123.dir/build.make CMakeFiles/ex123.dir/anomaly_detection_util.cpp.i
 .PHONY : anomaly_detection_util.cpp.i
 
 anomaly_detection_util.s: anomaly_detection_util.cpp.s
@@ -571,8 +544,35 @@ anomaly_detection_util.s: anomaly_detection_util.cpp.s
 
 # target to generate assembly for a file
 anomaly_detection_util.cpp.s:
-	$(MAKE) -f CMakeFiles/EX1.dir/build.make CMakeFiles/EX1.dir/anomaly_detection_util.cpp.s
+	$(MAKE) -f CMakeFiles/ex123.dir/build.make CMakeFiles/ex123.dir/anomaly_detection_util.cpp.s
 .PHONY : anomaly_detection_util.cpp.s
+
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/ex123.dir/build.make CMakeFiles/ex123.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/ex123.dir/build.make CMakeFiles/ex123.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/ex123.dir/build.make CMakeFiles/ex123.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -610,16 +610,16 @@ help:
 	@echo "... ExperimentalBuild"
 	@echo "... ExperimentalUpdate"
 	@echo "... ContinuousStart"
+	@echo "... ex123"
 	@echo "... ContinuousMemCheck"
 	@echo "... ContinuousTest"
 	@echo "... ContinuousSubmit"
-	@echo "... EX1"
-	@echo "... MainTrain.o"
-	@echo "... MainTrain.i"
-	@echo "... MainTrain.s"
 	@echo "... anomaly_detection_util.o"
 	@echo "... anomaly_detection_util.i"
 	@echo "... anomaly_detection_util.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

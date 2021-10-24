@@ -28,7 +28,7 @@
 /home/david1998/Documents/HW/tihnut_mitkadem1/ex1/build/CMakeFiles/ExperimentalBuild.dir
 /home/david1998/Documents/HW/tihnut_mitkadem1/ex1/build/CMakeFiles/ExperimentalUpdate.dir
 /home/david1998/Documents/HW/tihnut_mitkadem1/ex1/build/CMakeFiles/ContinuousStart.dir
+/home/david1998/Documents/HW/tihnut_mitkadem1/ex1/build/CMakeFiles/ex123.dir
 /home/david1998/Documents/HW/tihnut_mitkadem1/ex1/build/CMakeFiles/ContinuousMemCheck.dir
 /home/david1998/Documents/HW/tihnut_mitkadem1/ex1/build/CMakeFiles/ContinuousTest.dir
 /home/david1998/Documents/HW/tihnut_mitkadem1/ex1/build/CMakeFiles/ContinuousSubmit.dir
-/home/david1998/Documents/HW/tihnut_mitkadem1/ex1/build/CMakeFiles/EX1.dir
